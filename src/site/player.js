@@ -28,17 +28,17 @@ function submit() {
 
 	let json_obj = JSON.stringify(obj);
 
-//	fetch('http://localhost:8080/', {
-//		method: 'POST',
-//		headers: {
-//			'Content-Type': 'application/json',
-//		},
-//		body: json_obj
-//	}).then(response => response.json())
-//	  .then(data => { console.log("success", data) } )
-//	  .catch((error) => {
-//			console.error('Error:', error);
-//	});
+	fetch('http://localhost:8080/', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: json_obj
+	}).then(response => response.json())
+	  .then(data => { console.log("success", data) } )
+	  .catch((error) => {
+			console.error('Error:', error);
+	});
 
 
 	let placed_letters_amount = placed_letters.length;
